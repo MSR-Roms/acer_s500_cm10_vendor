@@ -75,7 +75,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_BLOB_FOLDER)/lib/libcurl.so:system/lib/libcurl.so \
     $(VENDOR_BLOB_FOLDER)/lib/libdiag.so:system/lib/libdiag.so \
     $(VENDOR_BLOB_FOLDER)/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
-    $(VENDOR_BLOB_FOLDER)/lib/libdivxdrmdecrypt.so:system/lib/libdivxdrmdecrypt.so \
     $(VENDOR_BLOB_FOLDER)/lib/libdnshostprio.so:system/lib/libdnshostprio.so \
     $(VENDOR_BLOB_FOLDER)/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
     $(VENDOR_BLOB_FOLDER)/lib/libdsprofile.so:system/lib/libdsprofile.so \
@@ -93,30 +92,13 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_BLOB_FOLDER)/lib/libiprouteutil.so:system/lib/libiprouteutil.so \
     $(VENDOR_BLOB_FOLDER)/lib/libjpeg.so:system/lib/libjpeg.so \
     $(VENDOR_BLOB_FOLDER)/lib/libjpegrd.so:system/lib/libjpegrd.so \
-    $(VENDOR_BLOB_FOLDER)/lib/libloc_adapter.so:system/lib/libloc_adapter.so \
-    $(VENDOR_BLOB_FOLDER)/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    $(VENDOR_BLOB_FOLDER)/lib/libloc_eng.so:system/lib/libloc_eng.so \
     $(VENDOR_BLOB_FOLDER)/lib/libmm-abl.so:system/lib/libmm-abl.so \
     $(VENDOR_BLOB_FOLDER)/lib/libmm-abl-oem.so:system/lib/libmm-abl-oem.so \
     $(VENDOR_BLOB_FOLDER)/lib/libmm-audio-resampler.so:system/lib/libmm-audio-resampler.so \
     $(VENDOR_BLOB_FOLDER)/lib/libmmcamera_faceproc.so:system/lib/libmmcamera_faceproc.so \
     $(VENDOR_BLOB_FOLDER)/lib/libmmcamera_frameproc.so:system/lib/libmmcamera_frameproc.so \
-$(VENDOR_BLOB_FOLDER)/lib/libcamera_client.so:system/lib/libcamera_client.so \
+    $(VENDOR_BLOB_FOLDER)/lib/libcamera_client.so:system/lib/libcamera_client.so \
     $(VENDOR_BLOB_FOLDER)/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
-    $(VENDOR_BLOB_FOLDER)/lib/libmmipl.so:system/lib/libmmipl.so \
-    $(VENDOR_BLOB_FOLDER)/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
-    $(VENDOR_BLOB_FOLDER)/lib/libmmmpod.so:system/lib/libmmmpod.so \
-    $(VENDOR_BLOB_FOLDER)/lib/libmmjps.so:system/lib/libmmjps.so \
-    $(VENDOR_BLOB_FOLDER)/lib/libmm-omxcore.so:system/lib/libmm-omxcore.so \
-    $(VENDOR_BLOB_FOLDER)/lib/libmmmpo.so:system/lib/libmmmpo.so \
-    $(VENDOR_BLOB_FOLDER)/lib/libmmosal.so:system/lib/libmmosal.so \
-    $(VENDOR_BLOB_FOLDER)/lib/libmmparser.so:system/lib/libmmparser.so \
-    $(VENDOR_BLOB_FOLDER)/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
-    $(VENDOR_BLOB_FOLDER)/lib/libmmstereo.so:system/lib/libmmstereo.so \
-    $(VENDOR_BLOB_FOLDER)/lib/libmmstillomx.so:system/lib/libmmstillomx.so \
-    $(VENDOR_BLOB_FOLDER)/lib/libmmwfdinterface.so:system/lib/libmmwfdinterface.so \
-    $(VENDOR_BLOB_FOLDER)/lib/libmmwfdsinkinterface.so:system/lib/libmmwfdsinkinterface.so \
-    $(VENDOR_BLOB_FOLDER)/lib/libmmwfdsrcinterface.so:system/lib/libmmwfdsrcinterface.so \
     $(VENDOR_BLOB_FOLDER)/lib/libnetmgr.so:system/lib/libnetmgr.so \
     $(VENDOR_BLOB_FOLDER)/lib/libNimsWrap.so:system/lib/libNimsWrap.so \
     $(VENDOR_BLOB_FOLDER)/lib/liboemcamera.so:system/lib/liboemcamera.so \
@@ -134,6 +116,7 @@ $(VENDOR_BLOB_FOLDER)/lib/libcamera_client.so:system/lib/libcamera_client.so \
     $(VENDOR_BLOB_FOLDER)/lib/libquipc_ulp_adapter.so:system/lib/libquipc_ulp_adapter.so \
     $(VENDOR_BLOB_FOLDER)/lib/libQWiFiSoftApCfg.so:system/lib/libQWiFiSoftApCfg.so \
     $(VENDOR_BLOB_FOLDER)/lib/libsensor1.so:system/lib/libsensor1.so \
+    $(VENDOR_BLOB_FOLDER)/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     $(VENDOR_BLOB_FOLDER)/lib/libsensor_reg.so:system/lib/libsensor_reg.so \
     $(VENDOR_BLOB_FOLDER)/lib/libSHIMDivxDrm.so:system/lib/libSHIMDivxDrm.so \
     $(VENDOR_BLOB_FOLDER)/lib/libSR_AudioIn.so:system/lib/libSR_AudioIn.so \
@@ -175,17 +158,14 @@ $(VENDOR_BLOB_FOLDER)/lib/libcamera_client.so:system/lib/libcamera_client.so \
     $(VENDOR_BLOB_FOLDER)/lib/libril-acerril-hook-oem.so:system/lib/libril-acerril-hook-oem.so \
     $(VENDOR_BLOB_FOLDER)/lib/hw/lights.msm8960.so:system/lib/hw/lights.msm8960.so \
     $(VENDOR_BLOB_FOLDER)/lib/libc.so:system/lib/libc.so \
-    $(VENDOR_BLOB_FOLDER)/lib/libm.so:system/lib/libm.so \
-    $(VENDOR_BLOB_FOLDER)/lib/hw/power.default.so:system/lib/hw/power.default.so \
-    $(VENDOR_BLOB_FOLDER)/vendor/lib/hw/power.swing.so:system/vendor/lib/hw/power.swing.so  
+    $(VENDOR_BLOB_FOLDER)/lib/libm.so:system/lib/libm.so
 
 # Gps
 PRODUCT_COPY_FILES +=  \
     $(VENDOR_BLOB_FOLDER)/lib/libgps.utils.so:system/lib/libgps.utils.so \
     $(VENDOR_BLOB_FOLDER)/lib/libloc_adapter.so:system/lib/libloc_adapter.so \
     $(VENDOR_BLOB_FOLDER)/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    $(VENDOR_BLOB_FOLDER)/lib/libloc_eng.so:system/lib/libloc_eng.so \
-    $(VENDOR_BLOB_FOLDER)/lib/libloc_ext.so:system/lib/libloc_ext.so 
+    $(VENDOR_BLOB_FOLDER)/lib/libloc_eng.so:system/lib/libloc_eng.so 
 
 # Firmware
 PRODUCT_COPY_FILES +=  \
